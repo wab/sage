@@ -1,8 +1,9 @@
-@import "common/variables";
+@import "common/settings";
 
 // Import npm dependencies
-@import "~bootstrap/scss/bootstrap";
+@import "~foundation-sites/scss/foundation";
 
+@import "common/includes";
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -15,3 +16,4 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
