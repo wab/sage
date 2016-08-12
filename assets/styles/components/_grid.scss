@@ -6,10 +6,12 @@
     @include grid-col-size($main-small-columns);
     .sidebar-primary & {
       @include grid-col-size($main-small-columns - $sidebar-small-columns);
+
     }
   }
 }
 .sidebar {
+
   @include grid-col;
 
   @include breakpoint(medium) {
