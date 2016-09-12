@@ -6,6 +6,7 @@ const CleanPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
+const SvgStore = require('webpack-svgstore-plugin');
 
 const mergeWithConcat = require('./util/mergeWithConcat');
 const addHotMiddleware = require('./util/addHotMiddleware');
@@ -142,6 +143,7 @@ const webpackConfig = {
       })],
       disable: (config.enabled.watcher),
     }),
+    new SvgStore(),
     new ExtractTextPlugin({
       filename: `styles/${assetsFilenames}.css`,
       allChunks: true,
