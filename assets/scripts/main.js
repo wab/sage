@@ -1,5 +1,5 @@
 // import external dependencies
-import 'jquery'
+import 'jquery';
 
 // Import npm dependencies
 import 'foundation-sites/js/foundation.core';
